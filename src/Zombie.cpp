@@ -4,7 +4,7 @@ Zombie::Zombie()
 {
     nom = "Default";
     pv = 100;
-	attack = 0;
+	attack = 10;
 }
 
 Zombie::Zombie(string n){
@@ -53,24 +53,12 @@ int Zombie::getAttack() const
 
 void Zombie::setAttack(int a)
 {
-	if (a < 0) {
-		attack = 0;
-	}
-	else {
-		attack = a;
-	}
+	attack = a;
 }
-
 
 void Zombie::showInfos() const
 {
-	cout << "nom : " << getNom() << endl;
-	cout << "pv : " << getPv() << endl;
-	cout << "attack : " << getAttack() << endl;
+	cout << "Je suis un " << getNom() << endl;
+	cout << "J'ai " << getPv() << " PV" << endl;
+	cout << "J'ai " << getAttack() << " pts de force" << endl;
 }
-
-
-
-
-
-

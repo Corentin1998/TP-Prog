@@ -8,15 +8,15 @@ using namespace std;
 
 class Zombie
 {
-private :
-    string nom = "Jean";
+private:
+    string nom = "Zombie de base";
     int pv = 100;
     int attack = 10;
 
-    public:
-        Zombie();
-        Zombie(string n);
-        Zombie(int p, int a);
+public:
+    Zombie();
+    Zombie(string n);
+    Zombie(int p, int a);
 
     ~Zombie();
 
